@@ -1,7 +1,16 @@
 {
-	"name": "svelte-rack-focus",
+	"name": "@pcholt/svelte-rack-focus",
 	"version": "0.1.0",
 	"description": "Depth-of-field modals and a self-measuring animated list for Svelte 5. Nothing appears, nothing disappears.",
+	"author": "pcholt",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/pcholt/svelte-rack-focus.git"
+	},
+	"homepage": "https://github.com/pcholt/svelte-rack-focus#readme",
+	"bugs": {
+		"url": "https://github.com/pcholt/svelte-rack-focus/issues"
+	},
 	"license": "MIT",
 	"publishConfig": {
 		"access": "public"

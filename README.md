@@ -1,4 +1,4 @@
-# svelte-rack-focus
+# @pcholt/svelte-rack-focus
 
 Two Svelte 5 components built to one rule:
 
@@ -14,7 +14,7 @@ Both work with zero configuration and no stylesheet to import.
 ## Install
 
 ```bash
-npm install svelte-rack-focus
+npm install @pcholt/svelte-rack-focus
 ```
 
 Svelte 5 is a peer dependency. Nothing else is.
@@ -23,7 +23,7 @@ Svelte 5 is a peer dependency. Nothing else is.
 
 ```svelte
 <script>
-  import { Modal, AnimatedList } from 'svelte-rack-focus';
+  import { Modal, AnimatedList } from '@pcholt/svelte-rack-focus';
 
   let open = $state(false);
   let items = $state([{ id: 1, label: 'One' }]);
@@ -89,7 +89,7 @@ your app declares — set `color-scheme: dark` on `:root` and the dialog goes
 dark on its own. For the lab's own filmic palette instead:
 
 ```js
-import 'svelte-rack-focus/theme.css';
+import '@pcholt/svelte-rack-focus/theme.css';
 ```
 
 **Timings are props, not custom properties.** The modal's transitions are
@@ -143,7 +143,7 @@ throwaway app rather than trusting `dist/` by eye:
 ```bash
 npm run package && npm pack
 cd /tmp && npx sv create consumer --template minimal --types ts
-cd consumer && npm install /path/to/svelte-rack-focus-0.1.0.tgz
+cd consumer && npm install /path/to/pcholt-svelte-rack-focus-0.1.0.tgz
 ```
 
 That is how the `light-dark(gradient, gradient)` bug above was caught: it was
@@ -226,7 +226,7 @@ src/
     index.ts                  the public surface
     Modal.svelte              the depth-of-field dialog
     AnimatedList.svelte       the self-measuring list
-    theme.css                 optional palette (`svelte-rack-focus/theme.css`)
+    theme.css                 optional palette (`@pcholt/svelte-rack-focus/theme.css`)
     motion/
       tokens.ts               durations, easings, blur radii
       transitions.ts          dof() / focusIn() / focusOut() / rack()
