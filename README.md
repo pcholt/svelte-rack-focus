@@ -1,5 +1,8 @@
 # @pcholt/svelte-rack-focus
 
+[![npm](https://img.shields.io/npm/v/@pcholt/svelte-rack-focus)](https://www.npmjs.com/package/@pcholt/svelte-rack-focus)
+[![license](https://img.shields.io/npm/l/@pcholt/svelte-rack-focus)](./LICENSE)
+
 Two Svelte 5 components built to one rule:
 
 > **Nothing appears and nothing disappears. Everything interpolates.**
